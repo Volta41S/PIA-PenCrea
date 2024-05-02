@@ -4,11 +4,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <meta charset="UTF-8"/>
+    <title>Inicio de sesión</title>
+    
 </head>
 <body>
-    <form id="form1" runat="server">
+    <link href="~/CSS/style.css" rel="stylesheet" type="text/css"/>
+    <h1>Bienvenido</h1>
+    <form id="Login" runat="server">
         <div>
+            <label for="txtusuario">ID Usuario: </label>
+            <asp:TextBox ID="txtusuario" runat="server" placeholder="ID de usuario"></asp:TextBox>
+
+            <label for="txtcontraseña">Contraseña: </label>
+            <asp:TextBox ID="txtcontraseña" runat="server" Textmode="Password"></asp:TextBox>
+
         </div>
     </form>
 </body>
