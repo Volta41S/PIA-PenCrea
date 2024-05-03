@@ -41,5 +41,6 @@
     <footer>
         <p>Aplicación web para la administración de residuos.</p>
     </footer>
+    
 </body>
 </html>
