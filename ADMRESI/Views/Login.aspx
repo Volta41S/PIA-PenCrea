@@ -29,7 +29,7 @@
             <asp:TextBox ID="txtcontraseña" runat="server" Textmode="Password"></asp:TextBox>
             </div>
             <div class="row">
-            <asp:button ID="btnIniciar" runat="server" Text="Iniciar sesion"/>
+            <asp:button ID="btnIniciar" runat="server" Text="Iniciar sesion" OnClick="btnIniciar_Click"/>
             <!-- <asp:button ID="btnCancelar" runat="server" Text="Cancelar"/> -->
             </div>
         </div>

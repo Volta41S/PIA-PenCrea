@@ -19,6 +19,8 @@ namespace ADMRESI.Views
         protected void btnIniciar_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-AT-LP;Initial Catalog=DBPENCREA;Integrated Security=True");
+            //SqlConnection con = new SqlConnection("Data Source=MON6TQQ7V3;Initial Catalog=DBPENCREA;Integrated Security=True;");
+
             con.Open();
             string loginQuery = "SELECT COUNT(*) FROM USUARIO WHERE ID_USUARIO=CONVERT(INT,@idusuario) and contra_usuario=@passw";
             SqlCommand cmd = new SqlCommand(loginQuery, con);

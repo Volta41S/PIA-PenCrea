@@ -17,23 +17,24 @@ html {
 
 .page-login {
     padding: 10px 15px;
-    align-content: center;
-    display: grid;
+    place-content: center;
+    display: flex;
 }
 
 
 
 .block-login {
     
-    padding: 5% 5% 5% 5%;
+    width: 80%;
+    height: 70%;
+    
     border: solid;
-    border-width:10px;
+    border-width: 10px;
     /*border-block-width: 2px;*/
     border-block-start-color: forestgreen;
     border-block-end-color: lawngreen;
     align-content: center;
-    display:flex;
-   
+    display: flex;
 }
 
 .row{
@@ -41,7 +42,7 @@ html {
 }
 
 footer{
-    width: 100%;
+    width: 99%;
     height: auto;
     text-align:center;
     background-color: green;
