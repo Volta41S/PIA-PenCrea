@@ -6,20 +6,40 @@
 <head runat="server">
     <meta charset="UTF-8"/>
     <title>Inicio de sesión</title>
-    
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <link href="~/CSS/style.css" rel="stylesheet" type="text/css"/>
-    <h1>Bienvenido</h1>
+    <div class="contenido">
+    <div class="titulo">
+        <h1>Bienvenido</h1>
+        <asp:Label runat="server"><h3>Inicio de sesion</h3></asp:Label>
+    </div>
+    <div class="page-login">
+    
     <form id="Login" runat="server">
-        <div>
-            <label for="txtusuario">ID Usuario: </label>
+        <div class="block-login">
+            
+            <div class="row">
+            
+            <asp:label for="txtusuario" runat="server">ID Usuario: </asp:label>
             <asp:TextBox ID="txtusuario" runat="server" placeholder="ID de usuario"></asp:TextBox>
-
-            <label for="txtcontraseña">Contraseña: </label>
+                </div>
+            <div class="row">
+            <asp:label for="txtcontraseña" runat="server">Contraseña: </asp:label>
             <asp:TextBox ID="txtcontraseña" runat="server" Textmode="Password"></asp:TextBox>
-
+            </div>
+            <div class="row">
+            <asp:button ID="btnIniciar" runat="server" Text="Iniciar sesion"/>
+            <!-- <asp:button ID="btnCancelar" runat="server" Text="Cancelar"/> -->
+            </div>
         </div>
+       
     </form>
+        
+        </div>
+        </div>
+    <footer>
+        <p>Aplicación web para la administración de residuos.</p>
+    </footer>
 </body>
 </html>
