@@ -13,15 +13,11 @@ html {
     display:inline;
 }
 
-
-
 .page-login {
     padding: 10px 15px;
     place-content: center;
     display: flex;
 }
-
-
 
 .block-login {
     
@@ -41,14 +37,79 @@ html {
     padding: 2% 2% 2% 2%;
 }
 
-footer{
-    width: 99%;
+footer {
+    width: 100%;
     height: auto;
-    text-align:center;
+    text-align: center;
     background-color: green;
-    color: white;
+    color: #000;
     position: absolute;
     bottom: 0;
-    
-
+    right: 0;
+    font-weight: bold;
+    font-size: 15px;
 }
+
+#img1{
+    width: 64px;
+    height: 64px;
+   
+}
+
+nav {
+    position: absolute;
+    top:0px;
+    right: 0;
+    background-color: green;
+    width: 100%;
+}
+
+nav li{
+    
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    color: #000000;
+    font-weight:bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #f38952;
+    text-decoration: underline;
+}
+
+#Salir{
+    position: absolute;
+    right:0;
+    margin: 0 0 0 20px;
+   
+}
+
+#contenido{
+    margin-top: 8rem;
+    position: relative;
+    
+    
+}
+
+#vinicio{
+    text-align: center;
+}
+
+table, th, tr, td{
+   
+    border: solid;
+    text-align: center;
+}
+th{
+    background-color: #1dd0f8
+}
+
+#agregar, editar, eliminar{
+    width: 10px;
+    height:4px;
+    

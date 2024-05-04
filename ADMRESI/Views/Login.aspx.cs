@@ -22,19 +22,23 @@ namespace ADMRESI.Views
             //SqlConnection con = new SqlConnection("Data Source=MON6TQQ7V3;Initial Catalog=DBPENCREA;Integrated Security=True;");
 
             con.Open();
-            string loginQuery = "SELECT COUNT(*) FROM USUARIO WHERE ID_USUARIO=CONVERT(INT,@idusuario) and contra_usuario=@passw";
+            string loginQuery = "select count(*) from usuario where id_usuario=@idusuario and contra_usuario=@passw";
             SqlCommand cmd = new SqlCommand(loginQuery, con);
             cmd.Parameters.AddWithValue("@idusuario", txtusuario.Text);
             cmd.Parameters.AddWithValue("@passw", txtcontraseña.Text);
-            int count = (int)cmd.ExecuteNonQuery();
+            int count = (int)cmd.ExecuteScalar();
             con.Close();
             if(count > 0)
             {
-                Response.Write("<script>alert('login success');</script>");
+                Response.Write("<script>alert('¡Inicio de sesión exitoso!');</script>");
+                Response.Redirect("Inicio.aspx");
+                Session["Aprovado"] = 1;
+              
             }
             else
             {
-                Response.Write("<script>alert('login unsuccess');</script>");
+                Response.Write("<script>alert('Usuario y/o contraseña incorrectos.');</script>");
+                
             }
 
         }

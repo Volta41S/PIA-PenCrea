@@ -39,7 +39,7 @@
         </div>
         </div>
     <footer>
-        <p>Aplicación web para la administración de residuos.</p>
+        <p>Aplicación web para la administración de residuos | Equipo 4 | Pensamiento Creativo.</p>
     </footer>
     
 </body>

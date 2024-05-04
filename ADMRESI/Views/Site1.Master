@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ADMRESI.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Aplicación web para la administración de residuos</title>
+        <asp:ContentPlaceHolder ID="ContentPlacehead" runat="server">
+        </asp:ContentPlaceHolder>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="short icon" href="IMG/download.jfif" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img id="img1" src="IMG/download.jfif"/></li>
+            <li><a href="Inicio.aspx">Inicio</a></li>
+            <li><a href="Vertederos.aspx">Vertederos</a></li>
+            <li><a href="Transporte.aspx">Transporte</a></li>
+            <li><a href="Administracion.aspx">Administración</a></li>
+            <li id="Salir"><a href="Login.aspx">Cerrar sesion</a></li>
+        </ul>
+    </nav>
+    <form id="form1" runat="server">
+        <div id="contenido">
+            <asp:ContentPlaceHolder ID="ContentPlaceBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+    <p>Aplicación web para la administración de residuos | Equipo 4 | Pensamiento Creativo.</p>
+</footer>
+</body>
+</html>
